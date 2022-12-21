@@ -5,7 +5,7 @@
 class DevTool < Formula
   desc ""
   homepage "https://github.com/plentymarkets/homebrew-plentytools"
-  version "0.0.14"
+  version "0.0.15"
 
   depends_on "jq"
   depends_on "mkcert"
@@ -16,16 +16,16 @@ class DevTool < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "http://brew-proxy.114.plenty.rocks/dev-tool/v0.0.14/dev-tool_0.0.14_Darwin_arm64.tar.gz"
-      sha256 "5b3d3eec5355175e93953238e667510b3efdc21100b3ab1ac9bfe733c835abc3"
+      url "http://brew-proxy.114.plenty.rocks/dev-tool/v0.0.15/dev-tool_0.0.15_Darwin_arm64.tar.gz"
+      sha256 "83c8bb0537cea685a6d881f39c33794cd443c8895e38cb28e237d95e8b54d616"
 
       def install
         bin.install "dev-tool"
       end
     end
     if Hardware::CPU.intel?
-      url "http://brew-proxy.114.plenty.rocks/dev-tool/v0.0.14/dev-tool_0.0.14_Darwin_amd64.tar.gz"
-      sha256 "d70f3b9b6f211afec27e18eeaed05ccf7aadd73d0b537497412a26c5d7c785e6"
+      url "http://brew-proxy.114.plenty.rocks/dev-tool/v0.0.15/dev-tool_0.0.15_Darwin_amd64.tar.gz"
+      sha256 "408f8284dc6cfd7daefa2702bc791e4584a6ec6c315574d0b87af94141d1e0ac"
 
       def install
         bin.install "dev-tool"
