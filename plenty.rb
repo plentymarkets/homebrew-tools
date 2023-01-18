@@ -5,7 +5,7 @@
 class Plenty < Formula
   desc ""
   homepage "https://github.com/plentymarkets/homebrew-tools"
-  version "0.0.39"
+  version "1.0.0"
 
   depends_on "jq"
   depends_on "mkcert"
@@ -15,16 +15,16 @@ class Plenty < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "http://brew-proxy.114.plenty.rocks/plenty/v0.0.39/plenty_0.0.39_Darwin_arm64.tar.gz"
-      sha256 "4a6f298734dbf2690526e82998a30a0c5d83e547800b4fa629fd5889132a3d79"
+      url "http://brew-proxy.114.plenty.rocks/plenty/v1.0.0/plenty_1.0.0_Darwin_arm64.tar.gz"
+      sha256 "141e989dd56fea91571afb38beff004c285b2dc7ad0fc35ea2dccb787158052d"
 
       def install
         bin.install "plenty"
       end
     end
     if Hardware::CPU.intel?
-      url "http://brew-proxy.114.plenty.rocks/plenty/v0.0.39/plenty_0.0.39_Darwin_amd64.tar.gz"
-      sha256 "bf5ca4bf93f084f0336293c7ec2df5146baaa103e8cff62c982f1c20b1c740cb"
+      url "http://brew-proxy.114.plenty.rocks/plenty/v1.0.0/plenty_1.0.0_Darwin_amd64.tar.gz"
+      sha256 "1acd6fa22aa9079f7939b84fa7cf3ad7a5fc159a33174f8e0bcf5d6797aab6f3"
 
       def install
         bin.install "plenty"
