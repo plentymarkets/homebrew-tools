@@ -5,7 +5,7 @@
 class Plenty < Formula
   desc ""
   homepage "https://github.com/plentymarkets/homebrew-tools"
-  version "1.5.5"
+  version "1.5.6"
 
   depends_on "gh"
   depends_on "jq"
@@ -14,8 +14,8 @@ class Plenty < Formula
   depends_on :macos
 
   on_intel do
-    url "http://brew-proxy.eks-114-1.plenty.rocks/plenty/v1.5.5/plenty_1.5.5_Darwin_amd64.tar.gz"
-    sha256 "43a9845dab583e728837fc55913087f79d25810e52d3d32b255d313997a0a3a9"
+    url "http://brew-proxy.eks-114-1.plenty.rocks/plenty/v1.5.6/plenty_1.5.6_Darwin_amd64.tar.gz"
+    sha256 "83f4acd8d4e0fd71ad041390638e470865c0bbcfc1f195f7aa671fbcb02420ed"
 
     def install
       bin.install "plenty"
@@ -23,8 +23,8 @@ class Plenty < Formula
     end
   end
   on_arm do
-    url "http://brew-proxy.eks-114-1.plenty.rocks/plenty/v1.5.5/plenty_1.5.5_Darwin_arm64.tar.gz"
-    sha256 "ae3c32594fdd9fc6f98fefe8372e6bbdbf8200a9afeca5cc1903cb225fa965b8"
+    url "http://brew-proxy.eks-114-1.plenty.rocks/plenty/v1.5.6/plenty_1.5.6_Darwin_arm64.tar.gz"
+    sha256 "8b18ece71937d63fdac041cd249071d64aca2bf2906306cd27b0603dfa5d2ab9"
 
     def install
       bin.install "plenty"
