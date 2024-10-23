@@ -5,7 +5,7 @@
 class Plenty < Formula
   desc ""
   homepage "https://github.com/plentymarkets/homebrew-tools"
-  version "1.6.1"
+  version "1.6.2"
 
   depends_on "gh"
   depends_on "jq"
@@ -14,21 +14,23 @@ class Plenty < Formula
   depends_on :macos
 
   on_intel do
-    url "http://brew-proxy.eks-114-1.plenty.rocks/plenty/v1.6.1/plenty_1.6.1_Darwin_amd64.tar.gz"
-    sha256 "c0cb448be6d1537145bbd433b531525ea52fe70e587c29ed1e9c1e3bf0e6f61f"
+    url "http://brew-proxy.eks-114-1.plenty.rocks/plenty/v1.6.2/plenty_1.6.2_Darwin_amd64.tar.gz"
+    sha256 "629d9afa7c8258874186ef59f4cd3e23888602851384f013ff133d32c9580995"
 
     def install
       bin.install "plenty"
       bin.install "scripts/kubectl-plenty"
+      bin.install "scripts/plentyctl"
     end
   end
   on_arm do
-    url "http://brew-proxy.eks-114-1.plenty.rocks/plenty/v1.6.1/plenty_1.6.1_Darwin_arm64.tar.gz"
-    sha256 "7bea51f3b62cf01fe0228d8320d508c985bba277f88a5c94e91e79efab19f7ce"
+    url "http://brew-proxy.eks-114-1.plenty.rocks/plenty/v1.6.2/plenty_1.6.2_Darwin_arm64.tar.gz"
+    sha256 "6beb63d1025ad4097d113899605f92534a93423d8bbaaa57d6345e9ddcf51483"
 
     def install
       bin.install "plenty"
       bin.install "scripts/kubectl-plenty"
+      bin.install "scripts/plentyctl"
     end
   end
 end
